@@ -1,0 +1,94 @@
+Ejercitación 1
+
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+    HTML es un lenguaje de marcado el cual se utiliza en la creacion de las paginas web y fue creado en el año 1991.
+Las distintas versiones de HTML fueron HTML 2.0, el HTML 3.2, el HTML 4.0, el HTML 4.01  y su ultima version es el HTML 5.
+
+Ejercitación 2
+
+2.a)
+<!-- Código controlado el día 12/08/2009 →
+     
+    Esta es la etiqueta de comentario la cual se puede colocar en cualquier parte del programa y no causa ningun efecto en el, ya que se utiliza para que los programadores puedan anotar cosas para despues recordarlas o que otros programadores entiendan el programa.
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+
+    La etiqueta div sirve para definir las divisiones lógicas existentes en el contenido de una página web.
+    La etiqueta div va en la seccion body de un archivo HTML.
+    El atributo id no es obligatorio y sirve para identificar el div en CSS y poder modificarlo.
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+    La etiqueta img sirve para poner una imagen en la pagina web.
+
+    Atributos de img
+    height sirve para definir la altura de la imagen.
+    width sirve para definir la anchura de la imagen.
+    longdesc complementa al texto de alt y se emplea para ofrecer una descripción más larga del elemento, no es obligatorio.
+    name sirve para ponerle un nombre a la imagen
+    id sirve para identificar el elemento en CSS y poder modificarlo.
+    alt este atributo define el texto alternativo que describe la imagen, texto que los usuarios verán en el caso que la imagen no aparesca.
+    src es la url para la imagen a utilizar y es un atributo obligatorio.
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+    Las etiquetas meta sirven como piezas importantes de información para los motores de búsqueda. Se utilizan para describir elementos HTML y comunicar el contenido de un sitio web para los motores de búsqueda.
+Estas etiquetas van en la seccion head.
+
+Atributos
+name
+lang sirve para especificar el idioma natural del contenido de una página web.
+content
+http-equiv 
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a>
+
+    La etiqueta sirve para crear un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.
+
+Atributos
+href Contiene una URL o un fragmento de URL que determina el destino del enlace.
+type especifica el tipo de medio (media type) en la forma de MIME type (en-US) para la URL enlazada.
+hreflang este atributo indica el lenguaje humano del recurso al que se enlaza.
+charset este atributo define la codificación de caracteres (character encoding) de la URL enlazada y no es obligatorio.
+rel especifica la relación del objeto de destino con el objeto de enlace.
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+    <caption align="top"> Título </caption>
+    <tr>
+        <th scope="col">&nbsp;</th>
+        <th scope="col">A</th>
+        <th scope="col">B</th>
+        <th scope="col">C</th>
+    </tr>
+    <tr>
+        <th scope="row">1º</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th scope="row">2º</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+    La etiqueta table sirve para crear filas y columnas en las cuales utilizar datos tabulados y se utiliza en la seccion body.
+Atributos table
+width este atributo define el ancho de la tabla y no es obligatorio.
+summary sirve para dar una descripción del contenido tratado en la tabla.
+
+    La etiqueta tr defina una fila de celdas en una tabla.
+
+    La etiqueta th define una fila de celdas en una tabla.
+    Atributos
+    scope define las celdas con las que se relaciona el elemento de encabezado.
+
+    La etiqueta td define la celda de una tabla que contiene datos.
