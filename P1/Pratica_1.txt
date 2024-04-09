@@ -1,0 +1,451 @@
+Ejercitación 1
+
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+
+    HTML es un lenguaje de marcado el cual se utiliza en la creacion de las paginas web y fue creado en el año 1991.
+Las distintas versiones de HTML fueron HTML 2.0, el HTML 3.2, el HTML 4.0, el HTML 4.01  y su ultima version es el HTML 5.
+
+Ejercitación 2
+
+2.a)
+<!-- Código controlado el día 12/08/2009 →
+     
+    Esta es la etiqueta de comentario la cual se puede colocar en cualquier parte del programa y no causa ningun efecto en el, 
+ya que se utiliza para que los programadores puedan anotar cosas para despues recordarlas o que otros programadores entiendan el programa.
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+
+    La etiqueta div sirve para definir las divisiones lógicas existentes en el contenido de una página web.
+    La etiqueta div va en la seccion body de un archivo HTML.
+    El atributo id no es obligatorio y sirve para identificar el div en CSS y poder modificarlo.
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+    La etiqueta img sirve para poner una imagen en la pagina web y se coloca en el body.
+
+    Atributos de img
+    height sirve para definir la altura de la imagen y no es obligatorio.
+    width sirve para definir la anchura de la imagen y no es obligatorio.
+    longdesc complementa al texto de alt y se emplea para ofrecer una descripción más larga del elemento, no es obligatorio.
+    name sirve para ponerle un nombre a la imagen y no es obligatorio.
+    id sirve para identificar el elemento en CSS y poder modificarlo y no es obligatorio.
+    alt este atributo define el texto alternativo que describe la imagen, texto que los usuarios verán en el caso que la imagen no aparesca y es obligatorio.
+    src es la url para la imagen a utilizar y es un atributo obligatorio.
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+    Las etiquetas meta sirven como piezas importantes de información para los motores de búsqueda. Se utilizan para describir elementos HTML y comunicar el contenido de un sitio web para los motores de búsqueda.
+Estas etiquetas van en la seccion head.
+
+Atributos
+name se utiliza en conjunto con el atributo “content” para proporcionar información sobre el documento, como la descripción, las palabras clave o el autor y es obligatorio.
+lang sirve para especificar el idioma natural del contenido de una página web.
+content contiene la información que deseas comunicar a los navegadores, motores de búsqueda y otras aplicaciones que procesan la página web y es obligatorio.
+http-equiv Aporta información sobre los encabezado de respuesta HTTP, puede usarse en lugar de name y no es obligatorio.
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a>
+
+    La etiqueta sirve para crear un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, 
+o cualquier otra URL y se usa en la seccion body.
+
+Atributos
+href Contiene una URL o un fragmento de URL que determina el destino del enlace y es obligatorio.
+type especifica el tipo de medio (media type) en la forma de MIME type (en-US) para la URL enlazada y no es obligatorio.
+hreflang este atributo indica el lenguaje humano del recurso al que se enlaza y no es obligatorio.
+charset este atributo define la codificación de caracteres (character encoding) de la URL enlazada y no es obligatorio.
+rel especifica la relación del objeto de destino con el objeto de enlace y no es obligatorio.
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+    <caption align="top"> Título </caption>
+    <tr>
+        <th scope="col">&nbsp;</th>
+        <th scope="col">A</th>
+        <th scope="col">B</th>
+        <th scope="col">C</th>
+    </tr>
+    <tr>
+        <th scope="row">1º</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th scope="row">2º</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+    La etiqueta table sirve para crear filas y columnas en las cuales utilizar datos tabulados y se utiliza en la seccion body.
+Atributos table
+width este atributo define el ancho de la tabla y no es obligatorio.
+summary sirve para dar una descripción del contenido tratado en la tabla y no es obligatorio.
+
+    La etiqueta tr defina una fila de celdas en una tabla.
+
+    La etiqueta th define una fila de celdas en una tabla.
+    Atributos
+    scope define las celdas con las que se relaciona el elemento de encabezado y no es obligatorio.
+
+    La etiqueta td define la celda de una tabla que contiene datos.
+
+EJERCICIO 3
+
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+<a href="#">Click aquí para ir a Google</a>
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+
+La primera <a> es un enlace que nos redirige a google.
+La segunda <a> es como la primera pero se diferencia en que abre una pestaña nueva.
+La tercera <a> tambien nos enviaria a google pero al no existir la etiqueta de cierre no se va a visualizar en la pagina.
+La cuarta <a> se va a visualizar en la pagina pero al clickearla no va a pasar nada.
+La quinta <a> se va a visualizar con la frase Click aquí para volver arriba pero al hacerle click no va a pasar nada.
+La sexta <a> no se va a visualizar porque no hay nada escrito entre las etiquetas <a></a>.
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a><a href="http://www.google.com.ar">Click aquí</a></p>
+
+El primer segmento es una etiqueta <p> que contiene dos etiquetas una <img> y una <a>, esto visualiza en la pagina una frase que al clickearla nos envia a google en la misma pestaña.
+El segundo segmento es una etiqueta <p> que contiene una etiqueta <a> y a su vez esta contiene a una <img>, este segmento visualiza lo mismo que el anterior pero se diferencia en que el enlace esta en la imagen y tambien nos lleva a google.
+El tercer segmento es una etiqueta <p> que contiene una etiqueta <a> y esta contiene una <img>, se visualiza la misma frase y imagen que los anteriores pero en este <a> abarca a ambos por lo que al tocar cualquiera de los dos nos envia a google.
+El cuarto segmento es igual al tercero la diferencia es que se utilizan dos etiquetas <a>.
+
+3.c)
+
+<ul>
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+</ul>
+
+Este primer segmento visualiza una lista no ordenada con tres elementos.
+
+<ol>
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+</ol>
+
+Este segundo segmento visualiza una lista ordenada con los mismos elementos que la anterior.
+
+<ol>
+    <li>xxx</li>
+</ol>
+<ol>
+    <li value="2">yyy</li>
+</ol>
+<ol>
+    <li value="3">zzz</li>
+</ol>
+
+Este segmento son 3 listas ordenadas y cada una contiene una etiqueta <li> las cuales tienen el atributo value, en una value es igual 2 y en la otra 3 para que no aparesca 1 en todas al ser 3 listas distintas.
+
+<blockquote>
+    <p>1. xxx<br />
+    2. yyy<br />
+    3. zzz</p>
+</blockquote>
+
+Este segmento se visualiza una lista ordenada igual a la del segmento 2 pero con la diferencia que tiene un espacio hacia la izquierda y hacia la derecha debido a la etiqueta <blockquote>, y que no es una lista ordenada ya que es una etiqueta <p>.
+
+3.d)
+
+<table border="1" width="300">
+    <tr>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+    </tr>
+    <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+    </tr>
+</table>
+
+En este segmento se visualiza uan tabla con 2 columnas y 3 filas.
+
+<table border="1" width="300">
+    <tr>
+        <td><div align="center"><strong>Columna 1</strong></div></td>
+        <td><div align="center"><strong>Columna 2</strong></div></td>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+    </tr>
+    <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+    </tr>
+</table>
+
+Este segmento visualiza lo mismo que el segmento anterior a pesar que este segmento utiliza mas etiquetas como la <div>, <align> y <strong>.
+
+3.e)
+
+<table width="200">
+    <caption>
+        Título
+    </caption>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+Este segmento visualiza una tabla con 3 columnas y 2 filas.
+
+<table width="200">
+    <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+ </table>
+
+Este segmento visualiza lo mismo que el anterior con la diferencia que no usa la etiqueta <caption> sino una etiqueta <tr> y una <td> con un <div> con el atributo align para que quede igual que con el <caption>.
+
+ 3.f)
+
+  <table width="200">
+    <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+    </tr>
+    <tr>
+        <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+Este segmento visualiza una tabla con 3 columnas, la primera columna no tiene filas y las otras 2 tienen 2 filas. 
+
+<table width="200">
+    <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+    </tr>
+    <tr>
+        <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+Este segmento visualmente a diferencia del anterior tiene 2 filas, la primera esta dividida en 2 columnas y la 2 en 3.
+La diferencia se debe porque este segmento en el segundo tr usa una td menos y en la primera td usa el atributo colspan y no es rowspan.
+
+3.g)
+
+<table width="200" border="1">
+    <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+    </tr>
+    <tr>
+        <td colspan="2"rowspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="50%">&nbsp;</td>
+    </tr>
+</table>
+
+Este segmento visualiza una tabla con 2 filas, la primera no tiene columnas y la segunda tiene 2 columnas, la segunda columna a su vez esta dividida por 2 filas. 
+
+<table width="200" border="1" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="2"><div align="center">Título</div></td>
+    </tr>
+    <tr>
+        <td rowspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="50%">&nbsp;</td>
+    </tr>
+</table>
+
+Este segmento visualmente es una tabla con las mimas filas y columnas que la anterior, la diferencia esta en que esta tabla no tiene un doble borde como si tiene la anterior.
+Esto se debe a que esta seccion utiliza los atributos cellpadding y cellspacing.
+
+3.h)
+
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+    <fieldset>
+        <legend>LOGIN</legend>
+        Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+        Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+    </fieldset>
+    <input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+Este segmento visualiza un formulario de logear una cuenta con dos input uno para el Usuario y el otro para la clave, ademas los input tienen valores predefinidos y el formulario tiene un borde negro.
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+    LOGIN<br />
+    <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+    <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+    <input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+Este segundo segmento visualmente es casi igual al anterior la diferencia esta en que este no tiene los bordes negros y los valores predefinidos.
+Este segmento al no tener la etiqueta fieldset no tiene bordes negros y no tiene los valores predefinidos porque no usa el atributo value en los inputs.
+
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="post" target="_blank">
+    <fieldset>
+        <legend>LOGIN</legend>
+        Usuario: <input type="text" id="usu3" name="usu3" /><br />
+        Clave: <input type="password" id="clave3" name="clave3" />
+    </fieldset>
+    <input type="reset" id="boton3" name="boton3" value="Enviar" />
+</form>
+
+Este tercer segmento es casi igual al primero la diferencia esta en que este no tiene los valores predefinidos.
+Este segmento no tiene los valores predefinidos porque no usa el atributo value en los inputs.
+
+
+3.i)
+
+<label>Botón 1<button type="button" name="boton1" id="boton1"><img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br /><b>CLICK AQUÍ</b></button></label>
+
+Este segmento visualiza un boton con una imagen y la frase click aqui.
+
+<label>Botón 2<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" /></label>
+
+Este segundo segmento se visualiza parecido al anterior la diferencia es que no tiene una imagen. 
+La diferencia se debe porque este segmento no usa una etiqueta img.
+
+3.j)
+
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br /><label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+En esta seccion se visualiza 2 radio botones los cuales solo se puede marcar uno.
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br /><label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+En esta seccion es visualmente igual a la anterior la diferencia esta en que se puede marcar los dos radios a la vez.
+La por la cual en esta seccion se pueden marcar dos y en la anterior solo una, es por el atributo name en la etiquetas input.
+En la primera el name al ser igual en los dos input solo se puede marcar uno.
+Y en esta seccion al ser diferentes se pueden marcar los dos a la vez.
+
+3.k)
+
+<select name="lista">
+    <optgroup label="Caso 1">
+        <option>Mayo</option>
+        <option>Junio</option>
+    </optgroup>
+    <optgroup label="Caso 2">
+        <option>Mayo</option>
+        <option>Junio</option>
+    </optgroup>
+</select>
+
+Esta seccion visualiza una lista la cual es una barra que al hacerle click se despliega y hay 4 opciones para elegir.
+
+<select name="lista[]" multiple="multiple">
+    <optgroup label=" Caso 1">
+        <option>Mayo</option>
+        <option>Junio</option>
+    </optgroup>
+    <optgroup label=" Caso 2">
+        <option>Mayo</option>
+        <option>Junio</option>
+    </optgroup>
+ </select>
+
+ Esta seccion visualiza una lista con las mismas opciones que la primera, la diferencia esta en que la lista ya esta desplegada en un cuadrado.
+ La diferencia de visualizacion con la otra seccion se debe a el atributo multiple.
+
+
+EJERCICIO 4
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.frro.utn.edu.ar/" target="_blank"><img src="https://www.frro.utn.edu.ar/imagenes/malvinas.png" alt="Imagen utn"></a>
+    <hr>
+    <h1>Año 2008</h1>
+    <table style="width: 500px;">
+        <th colspan="2">Examenes</th>
+        <tr>
+            <td rowspan="2">Fecha: 4/4</td>
+            <td>Aprobados
+                <tr>
+                    <td>24/30</td>
+                </tr>
+            </td>
+        </tr>
+    </table>
+    <ol>
+        <li><a href="Enunciado.html">Enunciado del examen</a></li>
+        <li><a href="Resolucion.html" target="_blank">Resolucion</a></li>
+    </ol>
+    <p>Puede realizar consultas completando el siguiente formulario:</p>
+    <form action="mailto: x@x.com" method="get">
+        <label for="mail">e-mail:</label>
+        <input id="mail">
+        <br>
+        <label for="consulta">Consulta:</label>
+        <br>
+        <textarea id="consulta" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+    <h2>Enunciado del examen</h2>
+    <p>Ejercicio 1:</p>
+    <p>Ejercicio 2:</p>
+    <p>Para mas informacion dirigirse a <a href="mailto: x@x.com" target="_blank">contacto@xx.com</a></p> 
+</body>
+</html>

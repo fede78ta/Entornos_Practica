@@ -1,0 +1,76 @@
+EJERCICIO 1
+
+1. ¿Ventajas de HTML5?
+    Al ser la version mas reciente HTML5 es mas avanzado que sus anteriores versiones y permite hacer cosas nuevas.
+Un ejemplo es que en esta version se incorpora el uso de audio y video a las paginas webs que se pueden crear.
+
+2. ¿Por qué utilizarlo?
+    Porque HTML5 es la version mas reciente del lenguaje de marcado estandar utilizado para hacer paginas webs.
+
+3. Nombre ventajas
+Es gratuito: no necesitas ningún software costoso para empezar a programar.
+El lenguaje tiene un código claro, ordenado y fácil de aprender.
+HTML5 es compatible con los navegadores web más populares y tiene un diseño responsivo.
+Las etiquetas descriptivas brindan un mejor posicionamiento en buscadores como Google.
+HTML5 soporta multimedia y funcionalidades interactivas.
+Las APIs permiten incluir elementos complejos, como dibujos 3D o mapas, directamente en el documento.
+Se puede realizar consultas SQL.
+HTML5 permite crear aplicaciones web.
+El lenguaje optimiza el tiempo de carga de un sitio web.
+La información del sitio web está mejor protegida.
+
+EJERCICIO 2
+
+2.A) ¿Qué formatos soporta ?
+
+HTML5 es compatible con AAC, MP3 y Ogg Vorbis para audio.
+
+2.B) Crear un elemento audio
+
+<audio src="desktop/musica/21guns.mp3" controls></audio>
+
+EJERCICIO 3
+
+3.A) ¿Qué formatos soporta ?
+
+HTML5 es compatible con Ogg Theora, WBEM y MPEG-4 para el vídeo.
+
+3.B) Crear un elemento video
+
+<video src="desktop/videos/video.mp4/ogg" controls></video>
+
+EJERCICIO 4
+
+4.A) 
+<form action="">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" required>
+</form>
+
+
+4.B) 
+<form action="">
+    <label for="mail">e-mail</label>
+    <input type="email" id="mail" required>
+</form>
+
+
+4.C) 
+<form action="">
+    <label for="fecha">Fecha</label>
+    <input type="date" id="fecha" required>
+</form>
+
+
+4.D) 
+<form action="">
+    <label for="color">Color</label>
+    <input type="color" id="color" required>
+</form>
+
+
+4.E) 
+<form action="">
+    <label for="number">Numero</label>
+    <input type="number" id="number" required min="0" max="5">
+</form>
