@@ -1,0 +1,252 @@
+EJERCICIO 1
+
+1. ¿ Qué es CSS y para qué se usa?
+
+Es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando un usuario las visita. 
+Funciona junto con el lenguaje HTML que se encarga del contenido básico de los sitios
+Sirve para crear reglas para decirle a tu sitio web cómo quieres mostrar la información y guardar los comandos para elementos de estilo (como fuentes, colores, tamaños, etc.) separados de los que configuran el contenido.
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+
+Las reglas en css estan compuestas por un selector y la declaracion, la declaracion esta compuesta por una propiedad y el valor que se le asigne.
+En codigo seria asi:
+
+p{
+    color:red;
+}
+
+Donde p seria el selector, color la propiedad, red el valor de la propiedad y estos dos juntos conformarian la declaracion osea color:red;.
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+
+Hay tres formas de aplicar estilos CSS en un documento HTML: directamente a la marca, incrustado en la cabecera y mediante hojas de estilo externas.
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados?
+Ejemplifique cada uno.
+
+Selector de elementos: Selecciona elementos en función de su nombre de etiqueta. Por ejemplo, para añadir estilos a todos los elementos h1.
+Ej:
+h1 {
+    color:blue;
+}
+
+Selector de clase: Selecciona elementos en función de su atributo de clase. Las clases se indican con un punto (.) en el código CSS, seguido del nombre de la clase.
+Ej:
+.highlight {
+    background-color: yellow;
+}
+
+Selector de ID: Selecciona elementos en función de su atributo de ID. Los ID se indican con un hash (#) en el código CSS, seguido del nombre del ID. 
+Los ID son exclusivos de una página y solo se pueden usar una vez.
+Ej:
+#header {
+    background-color: gray;
+}
+
+Selector universal: Selecciona todos los elementos de una página. Se indica con un asterisco (*) en el código CSS.
+Ej:
+* {
+    font-family: Arial;
+}
+
+Selector de atributos: Selecciona elementos en función de sus atributos y valores de atributos.
+Ej:
+input[type="send"] {
+    background-color: green;
+}
+
+Selector de hermanos adyacentes: El selector de hermanos adyacentes selecciona un elemento que está directamente después de otro elemento. 
+El selector se indica con un signo más (+) en el código CSS.
+Ej:
+h2 + p {
+    font-size: 18px;
+}
+
+Selector de descendientes: Selecciona elementos que son descendientes de un elemento especificado. 
+Los descendientes son elementos que están anidados dentro de otro elemento.
+Ej:
+p span {
+    color: red;
+}
+
+Selector de niños (child): Selecciona elementos que son descendientes directos de un elemento específico.
+Los elementos secundarios son elementos que están anidados directamente dentro de otro elemento.
+Ej:
+ul > li {
+    background-color: lightblue;
+}
+
+Selector de pseudoclase: Selecciona elementos en función de su estado o ubicación.
+Ej:
+a:visited {
+    color: purple;
+}
+
+Selector de pseudoelementos: Selecciona una parte específica de un elemento.
+Ej:
+p::first-letter {
+    font-size: 36px;
+}
+
+
+
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+
+Las pseudo-clases de CSS sirven para seleccionar de manera precisa elementos de la página y ajustar estilos de manera específica ante diversas situaciones.
+Las pseudo-clases :link y :visited son las mas aplicadas a vinculos.
+
+6. ¿ Qué es la herencia?
+
+La herencia es el proceso por el cual algunas propiedades CSS aplicadas a una etiqueta se pasan a las etiquetas anidadas
+
+7. ¿ En qué consiste el proceso denominado cascada?
+
+La cascada de CSS es la forma en la que el navegador interpreta nuestra hoja de estilos, resolviendo las declaraciones CSS y los posibles conflictos entre ellas.
+
+EJERCICIO 2
+
+p#normal {
+    font-family: arial,helvetica;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+Esta primera regla afecta a todas las etiquetas <p> que tengan un id llamado normal.
+La declaracion font-family: arial,helvetica; cambia el estilo de la fuente a arial, en caso de que esta no este pasa a la helvetica.
+La declaracion font-size: 11px; cambia el tamaño de la fuente en 11px.
+La declaracion font-weight: bold; cambia la fuente a negrita.
+
+
+*#destacado {
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+}
+
+Esta segunda regla afecta a todas las etiquetas que tengan un id llamado destacado.
+La declaracion border-style: solid; crea un borde alrededor de la fuente con un estilo solid el cual es una linea recta continua.
+La declaracion border-color: blue; hace que el color de las lineas del borde sea azul.
+La declaracion border-width: 2px; hace que cambie el ancho de las lineas del borde haciendo que sea de 2px.
+
+
+#distinto {
+    background-color: #9EC7EB;
+    color: red;
+}
+
+Esta tercera regla afecta a todas las etiquetas que tengan un id llamado distinto. 
+La declaracion background-color: #9EC7EB; cambia el fondo de la fuente poniendo uno de color celeste.
+La declaracion color: red; cambia el color de la fuente a color rojo.
+
+<p id="normal">Este es un párrafo</p>
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+<p id="distinto">Este es el último párrafo</p>
+
+EJERCICIO 3
+
+ p.quitar {
+        color: red;
+ }
+
+Esta regla afecta a las etiquetas <p> con una clase llamada quitar.
+La declaracion color: red; cambia el color de la fuente a rojo.
+
+*.desarrollo {
+        font-size: 8px;
+}
+
+Esta regla afecta a todas las etiquetas con una clase llamada desarrollo.
+La declaracion font-size: 8px; cambia el tamaño de la fuente a 8px.
+
+.importante {
+        font-size: 20px;
+}
+
+Esta regla afecta a todas las etiquetas con una clase llamada importante.
+La declaracion font-size: 20px; cambia el tamaño de la fuente a 20px.
+
+<p class="desarrollo"> 
+    En este primer párrafo trataremos lo siguiente:
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar">
+    Este párrafo debe ser quitado de la obra…
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p >
+    En este otro párrafo trataremos otro tema:
+    <br/>xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="importante">
+    Y este es el párrafo más importante de la obra…
+    <br/>xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p> 
+
+EJERCICIO 4 
+
+La diferencia entre ambos codigos es que en el primero la clase contenido esta en la etiqueta <p> haciendo que el estilo .contenido afecte solo a este. 
+Y en el segundo esta en la etiqueta <body> haciendo que afecte a todas las etiquetas que estan dentro de el.
+
+
+
+EJERCICIO 5
+
+1)
+
+#titulo{
+    color:red;
+}
+
+2)
+
+div p *[href]{
+    color:black;
+}
+
+3)
+
+div#ultimo ul li{
+    color: yellow;
+     & a{
+         color: blue;
+    }
+}
+
+
+4)
+
+div #importante{
+    color:green;
+}
+
+div h1 #importante{
+    color: red;
+}
+
+5)
+
+h1[title]{
+    color: blue;
+}
+
+6)
+
+ol li a{
+    &:link{
+        color:blue; 
+    }
+    &:visited{
+        text-decoration: none;
+        color: violet;
+    }
+}
+
+EJERCICIO 6
+
+Para lograr cambiar la hoja de estilo interna por la externa hay que modificar el head añadiendo la siguiente declaracion:
+<link rel="stylesheet" href="estilo2.css">
+
