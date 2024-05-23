@@ -1,0 +1,200 @@
+PHP: variables, tipos, operadores, expresiones, estructuras de control
+
+EJERCICIO 1
+
+<?php
+function doble($i) {
+ return $i*2;
+}
+$a = TRUE;
+$b = "xyz";
+$c = 'xyz';
+$d = 12;
+echo gettype($a);
+echo gettype($b);
+echo gettype($c);
+echo gettype($d);
+if (is_int($d)) {
+ $d += 4;
+}
+if (is_string($a)) {
+ echo "Cadena: $a";
+}
+$d = $a ? ++$d : $d*3;
+$f = doble($d++);
+$g = $f += 10;
+echo $a, $b, $c, $d, $f , $g;
+?> 
+
+Las variables son a,b,c,d,f y g.
+a es boleana.
+b es un string.
+c es un string.
+d es un entero.
+f es un entero.
+g es un entero.
+
+El codigo usa los operadores binarios + y *.
+Usa el operador unario ++.
+Y un operador ternario el cual es $a ? ++$d : $d*3.
+
+Este codigo usa una funcion definida por el usuario llamada doble, la cual usa un parametro por valor.
+Durante el programa la funcion doble usa la variable d como parametro.
+Tambien usa funciones ya definidas por php, las cuales son gettype, is_int y is_string.
+Durante el transcurso del programa gettype usa como parametros las variables a,b,c y d.
+is_int usa la variable d.
+y is_string usa a.
+
+El codigo usa dos estructuras de control las cuales son los dos siguientes if:
+if (is_int($d)) {
+ $d += 4;
+}
+if (is_string($a)) {
+ echo "Cadena: $a";
+}
+
+La salida por pantalla que da el codigo es la siguiente:
+booleanstringstringinteger1xyzxyz184444
+
+EJERCICIO 2
+
+a)
+Estos tres codigos son equivalentes ya que dan el mismo resultado el cual es:
+12345678910
+
+b)
+Estos cuatro codigos son equivalentes ya que dan el mismo resultado el cual es:
+12345678910
+
+c)
+Ambos codigos no funcionan.
+
+EJERCICIO 3
+
+a)
+
+Este codigo sirve para imprimir en pantalla una tabla de 5 filas y 2 columnas utilizando un for.
+
+b)
+
+Este codigo sirve para mostrar un formulario el cual nos pide la edad. 
+Si ingresamos un numero mayor o igual a 21 nos imprime en pantalla la frase mayor de edad.
+En caso de ingresar un numero menor a 21 nos imprime la frase menor de edad.
+
+EJERCICIO 4
+El codigo produce la siguiente salida:
+Warning: Undefined variable $flor in C:\xampp\htdocs\proyectos\e4.php on line 2
+
+Warning: Undefined variable $color in C:\xampp\htdocs\proyectos\e4.php on line 2
+El El clavel blanco
+
+Esta salida se debe ya que en el primer echo las variables no estan definidas por eso muestra los dos Warnings y imprime solo la palabra El.
+Y en el segundo echo se imprime El clavel blanco debido a que antes se usa la funcion include con el archivo datos.php donde estan definidas las variables.
+
+EJERCICIO 5
+
+
+
+
+
+
+
+PHP: arrays, funciones 
+
+EJERCICIO 1
+
+Estos codigos no tienen ninguna salida en pantalla pero si usamos la funcion var_dump para imprimir sus contenidos podemos ver que son equivalentes.
+
+
+
+EJERCICIO 2
+
+a)
+
+<?php
+$matriz = array("x" => "bar", 12 => true);
+echo $matriz["x"];
+echo $matriz[12];
+?>
+
+Este codigo da la salida bar1.
+
+b)
+
+<?php
+$matriz = array("unamatriz" => array(6 => 5, 13 => 9, "a" => 42));
+echo $matriz["unamatriz"][6];
+echo $matriz["unamatriz"][13];
+echo $matriz["unamatriz"]["a"];
+?>
+
+Este codigo da la salida 5942.
+
+c)
+
+<?php
+$matriz = array(5 => 1, 12 => 2);
+$matriz[] = 56;
+$matriz["x"] = 42; unset($matriz[5]); unset($matriz);
+?> 
+
+Este codigo no da ninguna salida ya que no tiene una funcion echo.
+
+
+EJERCICIO 3
+
+a)
+
+<?php
+$fun = getdate();
+echo "Has entrado en esta pagina a las $fun[hours] horas, con $fun[minutes] minutos y $fun[seconds]
+segundos, del $fun[mday]/$fun[mon]/$fun[year]";
+?>
+
+Este codigo da la siguiente salida:
+Has entrado en esta pagina a las 21 horas, con 49 minutos y 50 segundos, del 26/4/2024
+
+b)
+
+<?php
+function sumar($sumando1,$sumando2){
+ $suma=$sumando1+$sumando2;
+ echo $sumando1."+".$sumando2."=".$suma;
+}
+sumar(5,6);
+?>
+
+Este codigo da la siguiente salida:
+5+6=11
+
+EJERCICIO 4
+
+Esta funcion lo que hace es verificar si un nombre de usuario es valido.
+Primero comprueba que el tamaño del string sea valido.
+Y despues comprueba que los caracteres sean los permitodos.
+Si cumple con las validaciones imprime que el nombre es valido y en caso de fallar alguna de las 2 imprime que no es valido.
+
+Script:
+<?php
+function comprobar_nombre_usuario($nombre_usuario){
+ //compruebo que el tamaño del string sea válido.
+ if (strlen($nombre_usuario)<3 || strlen($nombre_usuario)>20){
+ echo $nombre_usuario . " no es válido<br>";
+ return false;
+ }
+ //compruebo que los caracteres sean los permitidos
+ $permitidos = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-
+_";
+ for ($i=0; $i<strlen($nombre_usuario); $i++){
+ if (strpos($permitidos, substr($nombre_usuario,$i,1))===false){
+ echo $nombre_usuario . " no es válido<br>";
+ return false;
+ }
+ }
+ echo $nombre_usuario . " es válido<br>";
+ return true;
+} 
+
+$nombre="fede";
+comprobar_nombre_usuario($nombre);
+?>
