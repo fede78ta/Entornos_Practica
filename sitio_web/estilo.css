@@ -1,0 +1,50 @@
+.titulo {
+    color: #0d6efd;
+    margin: 25px;
+}
+
+.parrafo {
+    color: #0d6efd;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.boton {
+    margin: 20px;
+}
+
+.boton_sup {
+    margin: 5px;
+}
+
+.lista {
+    width: 20%;
+
+}
+
+.cuadro {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.titulo_centro {
+    margin: 20px;
+    color:  #0d6efd;
+    text-align: center;
+}
+
+.formulario {
+    text-align: center;
+    margin: 20px;
+    color:  #0d6efd;
+}
+
+.tabla {
+    width: 50%;
+}
+
+.aviso {
+    text-align: center;
+    color: red;
+}
+
